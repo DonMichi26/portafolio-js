@@ -1,0 +1,33 @@
+/* Sidebar derecho */
+.sidebarRight {
+  width: 80px; /* Ancho */
+  height: 100vh; /* Altura completa */
+  background-color: #faedcd; /* Fondo */
+  position: fixed; /* Fijo en pantalla */
+  top: 0; /* Arriba */
+  right: 0; /* Derecha */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Columnas */
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  padding-top: 20px; /* Espaciado superior */
+  padding-bottom: 20px; /* Espaciado inferior */
+  box-sizing: border-box; /* Incluye padding y borde */
+}
+
+/* Texto vertical */
+.verticalText {
+  writing-mode: vertical-lr; /* Vertical */
+  transform: translateX(-50%); /* Centrado */
+  white-space: nowrap; /* Sin saltos */
+  color: black; /* Color */
+  font-size: 1.5rem; /* Tamaño */
+  letter-spacing: 0.5rem; /* Espaciado */
+  text-transform: uppercase; /* Mayúsculas */
+  opacity: 0.8; /* Transparencia */
+  position: absolute; /* Absoluto */
+  left: 50%; /* Centrado horizontal */
+  bottom: 4rem; /* Desde abajo */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold; 
+}

@@ -1,0 +1,101 @@
+  .heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #f5f5dc;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .textSection {
+    text-align: left;
+    margin-right: 10rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+  }
+  
+  .greeting {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 0.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  .name {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+  }
+  
+  .profession {
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+  }
+  
+  .imageSection {
+    position: relative;
+    margin-left: -5rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .outerCircle {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 1rem solid #d2b48c;
+    background-color: #d2b48c;
+    position: relative;
+  }
+  
+  .middleCircle {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 4rem solid #e6cbb2;
+    background-color: #e6cbb2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .imageCircle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+@keyframes rotate {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(360deg);
+  }
+}
+  .profilePic {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: rotate 10s linear infinite;
+  }

@@ -1,0 +1,23 @@
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+  font-family: sans-serif; /* Fuente predeterminada */
+  line-height: 1.6; /* Mejora la legibilidad */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+/* Contenedor principal de la aplicación */
+.app-container {
+  display: flex; /* Diseño flexible */
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1; /* Ocupa el espacio restante entre las barras laterales */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}

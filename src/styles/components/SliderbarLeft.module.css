@@ -1,0 +1,50 @@
+.sidebarLeft {
+  width: 5%;                    /* Sidebar width as 5% of viewport */
+  min-width: 50px;              /* Minimum width to prevent becoming too narrow */
+  height: 100vh;                /* Full viewport height */
+  background-color: #faedcd;     /* Light beige background color */
+  position: fixed;              /* Fixed position for persistent visibility */
+  top: 0;                       /* Align to top of viewport */
+  left: 0;                      /* Align to left of viewport */
+  display: flex;
+  flex-direction: column;       /* Vertical layout */
+  align-items: center;         /* Center items horizontally */
+  justify-content: flex-end;   /* Push content to bottom */
+  padding: 20px 0;             /* 20px padding top and bottom */
+  box-sizing: border-box;      /* Include padding in width/height calculations */
+  z-index: 100;                /* Ensure sidebar stays above other content */
+  transition: width 0.3s ease; /* Smooth transition for responsive adjustments */
+}
+
+.iconList {
+  list-style: none;            /* Remove default list bullets */
+  padding: 0;                  /* Remove default padding */
+  margin: 0;                   /* Remove default margin */
+  display: flex;
+  flex-direction: column;     /* Vertical item arrangement */
+  gap: 25px;                  /* Space between items (increased from 20px) */
+  align-items: center;        /* Center items horizontally */
+  margin-bottom: 20px;  
+  bottom: 4rem;      /* Additional bottom margin for breathing room */
+}
+
+.iconList li {
+  margin: 0;                   /* Remove default list item margins */
+  transition: transform 0.2s ease; /* Add hover animation */
+}
+
+.iconList li:hover {
+  transform: scale(1.1);       /* Slight zoom effect on hover */
+}
+
+.icon {
+  width: 35px;                /* Fixed width */
+  height: 35px;               /* Fixed height */
+  display: block;             /* Block display to prevent inline spacing */
+  cursor: pointer;           /* Change cursor to indicate clickability */
+  transition: opacity 0.2s ease; /* Smooth hover effect */
+}
+
+.icon:hover {
+  opacity: 0.8;               /* Slight transparency on hover */
+}
