@@ -1,26 +1,37 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../styles/components/Hero.module.css';
 import profileImage from '../assets/profile.svg';
 
-function Hero() {
+function Hero({ name = "Luis Magro", profession = "Estudiante de ingeniería de sistemas" }) {
   return (
-    <div className={styles.heroContainer}>
+    <section className={styles.heroContainer} aria-label="Presentación personal">
       <div className={styles.textSection}>
-        <p className={styles.greeting}>hola a todos, soy</p>
-        <h1 className={styles.name}>Luis Magro</h1>
-        <p className={styles.profession}>Estudiante de ingeniería de sistemas</p>
+        <p className={styles.greeting}>Hola a todos, soy</p>
+        <h1 className={styles.name}>{name}</h1>
+        <p className={styles.profession}>{profession}</p>
       </div>
       <div className={styles.imageSection}>
         <div className={styles.outerCircle}>
           <div className={styles.middleCircle}>
             <div className={styles.imageCircle}>
-              <img src={profileImage} alt="Mi perfil" className={styles.profilePic} />
+              <img
+                src={profileImage}
+                alt="Mi perfil"
+                className={styles.profilePic}
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
+
+Hero.propTypes = {
+  name: PropTypes.string,
+  profession: PropTypes.string,
+};
 
 export default Hero;
