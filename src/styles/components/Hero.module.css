@@ -1,101 +1,97 @@
-  .heroContainer {
+.heroContainer {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 3rem;
-    background-color: #f5f5dc;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    justify-content: flex-start;
+    background: #f8ecd7;
+    border: 2px solid #2196f3; /* azul */
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+    min-height: 350px;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
   }
   
   .textSection {
-    text-align: left;
-    margin-right: 10rem;
-    font-family: inherit;
-    font-size: 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
   }
   
   .greeting {
-    font-size: 1.5em;
-    color: black;
-    margin-bottom: 0.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .name {
-    font-size: 4em;
-    font-weight: bold;
-    margin-bottom: 0.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    color: #111;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -2px;
   }
   
   .profession {
-    font-size: 1.3em;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #222;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    letter-spacing: 1px;
   }
   
   .imageSection {
-    position: relative;
-    margin-left: -5rem;
-    z-index: 1;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .outerCircle {
-    width: 40rem;
-    height: 40rem;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    border: 1rem solid #d2b48c;
-    background-color: #d2b48c;
-    position: relative;
+    background: #c89d6a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .middleCircle {
-    width: 20rem;
-    height: 20rem;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 4rem solid #e6cbb2;
-    background-color: #e6cbb2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .imageCircle {
-    width: 15rem;
-    height: 15rem;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    background-color: #fff;
+    background: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #222;
   }
   
-@keyframes rotate {
-  0% { 
-    transform: rotate(0deg);
+  @keyframes rotate {
+    0% { 
+      transform: rotate(0deg);
+    }
+    100% { 
+      transform: rotate(360deg);
+    }
   }
-  100% { 
-    transform: rotate(360deg);
-  }
-}
-  .profilePic {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    object-fit: cover;
-    animation: rotate 10s linear infinite;
-  }
+    .profilePic {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      display: block;
+    }
